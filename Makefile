@@ -8,5 +8,5 @@ run: build
 	npx @11ty/eleventy eleventy --serve
 
 publish: build
-	rm -rf ../thanospapathanasiou.github.io/*
+	find ../thanospapathanasiou.github.io/ -mindepth 1 ! '(' -path '../thanospapathanasiou.github.io/.git/*' -or -name '.git' -or -name 'CNAME' ')' -delete
 	cp -a ./_site/. ../thanospapathanasiou.github.io/
