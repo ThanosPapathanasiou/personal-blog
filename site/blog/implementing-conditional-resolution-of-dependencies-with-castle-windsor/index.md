@@ -1,5 +1,6 @@
 ---
 title: Implementing conditional resolution of dependencies with Castle.Windsor
+description: An easy way to implement feature switches with dependency injection.
 date: 2020-05-27
 ---
 
@@ -72,7 +73,7 @@ The damn thing has a time complexity of O(2^n)
 
 As Rocky would say:
 
-![Motivational Rocky!](/assets/img/rocky.png)
+![Motivational Rocky!](/images/rocky.png)
 
 So, after you get your inspirational speech you go online and after some googling and Wikipedia reading you come across the article on Memoization.
 

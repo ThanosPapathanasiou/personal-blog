@@ -5,7 +5,7 @@ build: clean
 	npx @11ty/eleventy eleventy --formats=md,png --input=site --output=_site
 
 run: build
-	npx @11ty/eleventy eleventy --serve
+	npx @11ty/eleventy eleventy --formats=md,png --input=site --output=_site --serve
 
 publish: build
 	find ../thanospapathanasiou.github.io/ -mindepth 1 ! '(' -path '../thanospapathanasiou.github.io/.git/*' -or -name '.git' -or -name 'CNAME' ')' -delete
