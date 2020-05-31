@@ -67,13 +67,15 @@ And you get the output:
 
 ```
 
+Job well done.
+
 That is until you realize that for large numbers it gets exponentially slower because of the nature of this recursive algorithm.
 
 The damn thing has a time complexity of O(2^n)
 
 As Rocky would say:
 
-![Motivational Rocky!](/images/rocky.png)
+![Motivational Rocky!](./images/rocky.png)
 
 So, after you get your inspirational speech you go online and after some googling and Wikipedia reading you come across the article on Memoization.
 
