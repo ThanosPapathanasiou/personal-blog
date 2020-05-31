@@ -15,19 +15,25 @@ Hopefully you'll find something useful here.
 
 #### Here's my latest blog posts:
 <hr>
+
+<ul class="list-group list-group-flush">
 {% for post in posts -%}
-    <h4><a href={{post.url}}>{{post.data.title}}</a></h4>
-    <p>{{post.data.description}}</p>
-    <div>
-        <span class="badge badge-secondary">Posted {{ post.date | date: "%d %B %Y" }}</span>
-        <div class="float-right">
-            {%- for tag in post.data.tags -%}
-            <a href="/tags/{{tag}}" class="badge badge-pill badge-info">{{tag}}</a>
-            {% endfor -%}
+    <li class="list-group-item">
+        <h4><a href={{post.url}}>{{post.data.title}}</a></h4>
+        <p>{{post.data.description}}</p>
+        <div>
+            <span class="badge badge-secondary">Posted {{ post.date | date: "%d %B %Y" }}</span>
+            <div class="float-right">
+                {%- for tag in post.data.tags -%}
+                <a href="/tags/{{tag}}" class="badge badge-pill badge-info">{{tag}}</a>
+                {% endfor -%}
+            </div>
         </div>
-    </div>
-    <hr>
+    </li>
 {%- endfor -%}
+</ul>
+
+<hr>
 
 <ul class="pagination justify-content-center mb-4">
     {%- if pagination.href.previous -%}
