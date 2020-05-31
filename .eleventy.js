@@ -20,4 +20,14 @@ module.exports = function(eleventyConfig) {
     return new CleanCSS({}).minify(code).styles;
   });  
 
+  eleventyConfig.addCollection("posts", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("site/blog/*/*.md");
+  });
+
+  eleventyConfig.setTemplateFormats([
+    "md",
+    "njk",
+    "png"
+  ]);
+
 };

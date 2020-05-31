@@ -1,7 +1,12 @@
 ---
-title: How I setup eleventy to work with github pages
-description: Use this simple static site generator to finally start blogging with your free github page
-date: 2020-06-01
+title: Setting up eleventy to work with github pages
+description: A simple static site generator so you can finally start blogging with your free github page
+date: 2020-05-31
+tags:
+    - eleventy
+    - 11ty
+    - static-site-generation
+    - github-pages
 ---
 
 I did some stuff!

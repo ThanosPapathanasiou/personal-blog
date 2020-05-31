@@ -10,3 +10,7 @@ pre {
     background-color: #f6f8fa;
     border-radius: 3px;
 }
+
+.social a {
+  padding: 0 .5em;
+}

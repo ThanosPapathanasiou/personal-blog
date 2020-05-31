@@ -1,5 +1,5 @@
 ---
-title: Welcome to the blog!
+title: Welcome to my blog!
 pagination: 
     data: collections.posts
     alias: posts
@@ -7,12 +7,26 @@ pagination:
     reverse: true
 ---
 
-{%- for post in posts -%}
-    <h3><a href={{post.url}}>{{post.data.title}}</a></h3>
+Hi! My name is Thanos and this is my blog.
+
+It contains my observations on ~~a lot~~ some of the things I tinker with. The ones I managed to convince myself to actually sit down and document.
+
+Hopefully you'll find something useful here.
+
+#### Here's my latest blog posts:
+<hr>
+{% for post in posts -%}
+    <h4><a href={{post.url}}>{{post.data.title}}</a></h4>
     <p>{{post.data.description}}</p>
-    <span class="badge badge-secondary">Posted {{ post.date | date: "%d %B %Y" }}</span>
+    <div>
+        <span class="badge badge-secondary">Posted {{ post.date | date: "%d %B %Y" }}</span>
+        <div class="float-right">
+            {%- for tag in post.data.tags -%}
+            <a href="/tags/{{tag}}" class="badge badge-pill badge-info">{{tag}}</a>
+            {% endfor -%}
+        </div>
+    </div>
     <hr>
-    {{post.content}}
 {%- endfor -%}
 
 <ul class="pagination justify-content-center mb-4">

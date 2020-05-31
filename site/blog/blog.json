@@ -1,4 +1,3 @@
 {
-    "tags": "posts",
     "permalink": "/blog/{{ page.fileSlug }}/index.html"
 }
