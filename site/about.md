@@ -1,6 +1,6 @@
 ---
 title: About me!
-date: 1986-10-25
+date: 2020-05-02
 ---
 
 My name is Thanos Papathanasiou, I was born and raised in [Katerini, Greece][1] and moved to London a few years ago.

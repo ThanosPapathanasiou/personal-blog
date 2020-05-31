@@ -7,6 +7,7 @@ pagination:
     - all
     - posts
 permalink: /tags/{{ tag }}/
+eleventyExcludeFromCollections: true
 ---
 
 <h1>Posts with the tag “{{ tag }}”</h1>

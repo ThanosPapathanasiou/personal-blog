@@ -1,5 +1,6 @@
 ---
 title: Welcome to my blog!
+date: 2020-05-01
 pagination: 
     data: collections.posts
     alias: posts

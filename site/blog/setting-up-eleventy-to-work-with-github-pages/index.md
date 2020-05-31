@@ -4,9 +4,8 @@ description: A simple static site generator so you can finally start blogging wi
 date: 2020-05-31
 tags:
     - eleventy
-    - 11ty
-    - static-site-generation
-    - github-pages
+    - static site generation
+    - github pages
 ---
 
 I did some stuff!
