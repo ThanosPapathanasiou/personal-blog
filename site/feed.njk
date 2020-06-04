@@ -2,24 +2,14 @@
 {
   "permalink": "feed.xml",
   "eleventyExcludeFromCollections": true,
-  "layout": "",
-  "metadata": {
-    "title": "Random coding knowledge",
-    "subtitle": "",
-    "url": "https://thanos.codes",
-    "feedUrl": "https://thanos.codes/feed.xml",
-    "author": {
-      "name": "Thanos Papathanasiou",
-      "email": "thanospapathanasiou@hotmail.com"
-    }
-  }
+  "layout": ""
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.feed.id }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
   <updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
   <id>{{ metadata.url }}</id>

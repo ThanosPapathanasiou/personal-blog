@@ -1,5 +1,6 @@
 ---
 title: About me!
+description: My name is Thanos Papathanasiou, I am a software developer 
 date: 2020-05-02
 ---
 

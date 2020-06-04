@@ -10,6 +10,10 @@ layout:
   <url>
     <loc>{{ absoluteUrl }}</loc>
     <lastmod>{{ page.date | htmlDateString }}</lastmod>
+    {% if absoluteUrl == (metadata.url + "/") -%}
+    <changefreq>Weekly</changefreq>
+    <priority>1.0</priority>
+    {%- endif %}
   </url>
 {%- endfor %}
 </urlset>

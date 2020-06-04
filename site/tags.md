@@ -15,7 +15,7 @@ eleventyExcludeFromCollections: true
 
 <ul class="list-group list-group-flush">
 {% assign taggedposts = collections[tag] %}
-{% for post in taggedposts -%}
+{% for post in taggedposts reversed-%}
     <li class="list-group-item">
         <h4><a href={{post.url}}>{{post.data.title}}</a></h4>
         <p>{{post.data.description}}</p>

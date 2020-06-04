@@ -1,0 +1,14 @@
+{
+    "title": "Random coding knowledge",
+    "url": "https://thanos.codes",
+    "description": "This blog contains random coding knowledge I accumulated over the years.",
+    "feed": {
+      "filename": "feed.xml",
+      "id": "https://thanos.codes/feed.xml",
+      "path": "/feed.xml"
+    },
+    "author": {
+      "name": "Thanos Papathanasiou",
+      "email": "thanospapathanasiou@hotmail.com"
+    }
+}
