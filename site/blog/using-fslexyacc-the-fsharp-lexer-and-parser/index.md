@@ -12,8 +12,23 @@ tags:
 
 Lately I've been playing around with F# and specifically with using it for lexing and parsing. I've had to dig around a bit to get all the information needed to understand how to get a simple project up and running so I thought compiling that information would be a good idea. 
 
-Here's a step by step instruction to help you get up and running.
+This is going to be a tutorial that will help you setup a simple F# console application that will read the user's input and will try to evaluate it based on the basic math syntax that we will declare. 
 
+It should be able to evaluate input like: 
+1. `1 + 1` 
+2. `(1 + -2) - (6 / 3)`
+
+Pretty advanced stuff, I know :D
+
+If you don't feel like typing everything and just want to download the [code][6] and start tinkering then try the following:
+
+```
+npm install -g github-files-fetcher
+github-files-fetcher -url="https://github.com/ThanosPapathanasiou/personal-blog/tree/master/code-examples/lexing-and-parsing"
+code lexing-and-parsing
+```
+
+Otherwise, here's a step by step instruction to help you get up and running.
 
 #### Setting up a project to work with FsLexYacc
 ---
