@@ -396,4 +396,5 @@ If you want to understand a bit more about the abstract syntax trees then you ca
 [3]: http://fsprojects.github.io/FsLexYacc/reference/index.html
 [4]: https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form
 [5]: https://en.wikipedia.org/wiki/Polish_notation
-[6]: https://github.com/ThanosPapathanasiou/personal-blog/tree/master/coding-blog/lexing-and-parsing
+[6]: https://github.com/ThanosPapathanasiou/personal-blog/tree/master/code-examples/lexing-and-parsing
+     
