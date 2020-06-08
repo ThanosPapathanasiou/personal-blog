@@ -26,7 +26,7 @@ Hopefully you'll find something useful here.
             <span class="badge badge-secondary">Posted {{ post.date | date: "%d %B %Y" }}</span>
             <div class="float-right">
                 {%- for tag in post.data.tags -%}
-                <a href="/tags/{{tag}}" class="badge badge-pill badge-info">{{tag}}</a>
+                <a href="/tags/{{tag | url_encode }}" class="badge badge-pill badge-info">{{tag}}</a>
                 {% endfor -%}
             </div>
         </div>

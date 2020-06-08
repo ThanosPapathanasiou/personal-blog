@@ -24,9 +24,9 @@ eleventyExcludeFromCollections: true
             <div class="float-right">
                 {%- for posttag in post.data.tags -%}
                 {%- if posttag == tag -%}
-                <a href="/tags/{{posttag}}" class="badge badge-pill badge-primary">{{posttag}}</a>
+                <a href="/tags/{{posttag | url_encode }}" class="badge badge-pill badge-primary">{{posttag}}</a>
                 {%- else -%}
-                <a href="/tags/{{posttag}}" class="badge badge-pill badge-info">{{posttag}}</a>
+                <a href="/tags/{{posttag | url_encode }}" class="badge badge-pill badge-info">{{posttag}}</a>
                 {%- endif %}
                 {% endfor -%}
             </div>

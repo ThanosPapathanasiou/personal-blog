@@ -1,0 +1,23 @@
+%{
+let getOp op = 
+    match op with 
+    | "+" -> ( + )
+    | "-" -> ( - )
+    | "/" -> ( / )
+    | "*" -> ( * )
+    | _ -> failwith "unknown operator"
+%}
+
+%token <int> Number
+%token <string> OP
+%token EOF LPAREN RPAREN
+
+%start parse
+%type <int> parse
+%%
+
+parse: expr EOF        		 { $1 }
+
+expr: Number                 { $1 }
+    | expr OP expr           { $1 |> (getOp $2) <| $3 }
+    | LPAREN expr RPAREN     { $2 }

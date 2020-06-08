@@ -1,11 +1,11 @@
 ---
 title: Setting up eleventy to work with github pages
-description: A simple static site generator so you can finally start blogging with your free github page
+description: A simple static site generator so you can finally start blogging with your free github page.
 date: 2020-05-31
 tags:
     - eleventy
-    - static site generation
-    - github pages
+    - static-site-generation
+    - github-pages
 ---
 
 Ever since github started offering their GitHub Pages to use as a personal website for its users, I've been interested in using them. I've even tried setting mine up a couple of times but I always found that configuring jekyll and finding a proper theme that would play well with whatever versions of rubygems I already had was a pain. 

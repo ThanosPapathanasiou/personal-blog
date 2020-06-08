@@ -4,8 +4,8 @@ description: An easy way to implement feature switches with dependency injection
 date: 2020-05-27
 tags:
     - C#
-    - dotnet core
-    - dependency injection
+    - dotnet 
+    - dependency-injection
 ---
 
 Let’s say you are given the task of creating a console program to calculate the given element of the Fibonacci sequence.

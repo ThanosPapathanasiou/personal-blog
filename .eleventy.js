@@ -1,4 +1,3 @@
-const CleanCSS = require("clean-css");
 const htmlmin = require("html-minifier");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { DateTime } = require("luxon");
@@ -20,10 +19,8 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
-  eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
-  
+  eleventyConfig.addPassthroughCopy("site/assets");
+
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });  
