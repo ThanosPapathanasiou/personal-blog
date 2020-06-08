@@ -1,5 +1,6 @@
 ---
 title: Welcome to my blog!
+description: The personal website of Thanos Papathanasiou, a software developer specialising in the microsoft stack.
 date: 2020-05-01
 pagination: 
     data: collections.posts
